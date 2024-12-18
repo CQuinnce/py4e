@@ -46,4 +46,24 @@ def exercise_3():
     pay = hours * rate
     print(f"Your gross paycheck for this pay period is: ${pay}")
     print(f"Should your job round to the nearest dollar your pay is now: ${round(pay)}")
-exercise_3()
+
+#exercise_3()
+
+def temp_conversion():
+    celsius = None
+    fahrenheit = None
+    ask_temp_type = input("Would you like to convert to Celsius (C) or Fahrenheit (F)? ")
+
+    if ask_temp_type in ["C", "c"]:
+        temp = input("You have selected Celsius conversion. Please enter the temperature in Fahrenheit: ")
+        print(f"The temperature you entered is {temp}°F")
+
+    elif ask_temp_type in ["F", "f"]:
+        temp = input(
+            "You have selected Fahrenheit conversion. Please enter the temperature in Celsius: ")
+        print(f"The temperature you entered is {temp}°C")
+
+    else:
+        print("Invalid input. Please select either 'C' or 'F'.")
+
+temp_conversion()
