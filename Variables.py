@@ -55,15 +55,19 @@ def temp_conversion():
     ask_temp_type = input("Would you like to convert to Celsius (C) or Fahrenheit (F)? ")
 
     if ask_temp_type in ["C", "c"]:
-        temp = input("You have selected Celsius conversion. Please enter the temperature in Fahrenheit: ")
+        temp = float(input("You have selected Celsius conversion. Please enter the temperature in Fahrenheit: "))
         print(f"The temperature you entered is {temp}°F")
+        celsius = (temp - 32) * (5 / 9)
+        print(f"The converted temperature is: {celsius:.2f}°C")
 
     elif ask_temp_type in ["F", "f"]:
-        temp = input(
-            "You have selected Fahrenheit conversion. Please enter the temperature in Celsius: ")
+        temp = float(input("You have selected Fahrenheit conversion. Please enter the temperature in Celsius: "))
         print(f"The temperature you entered is {temp}°C")
+        fahrenheit = (temp * (9 / 5)) + 32
+        print(f"The converted temperature is: {fahrenheit:.2f}°F")
 
     else:
         print("Invalid input. Please select either 'C' or 'F'.")
+
 
 temp_conversion()
