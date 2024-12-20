@@ -1,4 +1,5 @@
 Chapter_3 = "Conditional Execution"
+<<<<<<< HEAD
 
 def exercise_1():
     hours = None
@@ -19,3 +20,5 @@ def exercise_1():
         print("Incorrect value entered.")
         return
 #exercise_1()
+=======
+>>>>>>> 93e8066af9526f60c6a33c3cff2d79988908fafd
