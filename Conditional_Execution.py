@@ -18,4 +18,4 @@ def exercise_1():
     except:
         print("Incorrect value entered.")
         return
-exercise_1()
+#exercise_1()
