@@ -26,6 +26,6 @@ def exercise_1():
     
     except ValueError:
         print("Incorrect value entered.")
-        break
+        return
 #exercise_1()
 
